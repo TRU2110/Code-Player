@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Code Player</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+
+
+	<div id="header">
+		
+		
+
+		
+		<div id="buttonContainer">
+			<div id="logo">
+			<img id="logoImg" src="Logo.png">
+		    </div>
+
+
+			<div id="leftButtons">
+        	<div class="toggleButton active" id="html">HTML</div>
+        	<div class="toggleButton" id="css">CSS</div>
+        	<div class="toggleButton" id="javascript">JavaScript</div>
+        	<div class="toggleButton active" id="output">Output</div>
+        	<div id="reset" title="Clear Code">Reset</div>
+			<div id="insertBoilerplate" title="Insert Boilerplate">Boilerplate</div>
+
+    		</div>
+
+			
+
+        		<div id="download" title="Download Code">
+        		    <img id="imgdwn" onclick="download()" src="download.png">
+        		</div>
+    	
+
+
+		</div>
+
+	</div>
+
+	<div id="bodyContainer">
+
+		<textarea id="htmlPanel" class="panel"><p id="paragraph">hello world</p>
+<button id="button">Change Text</button></textarea>
+
+
+		<textarea id="cssPanel" class="panel hidden">p {
+color : green;
+font-size:25px;
+}
+		</textarea>
+
+		<textarea id="javascriptPanel" class="panel hidden">document.getElementById("button").onclick=function(){
+document.getElementById("paragraph").innerHTML="This website is Awesome!";}</textarea>
+
+		<iframe id="outputPanel" class="panel"></iframe>
+		
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
